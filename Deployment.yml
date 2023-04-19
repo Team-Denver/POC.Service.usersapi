@@ -30,7 +30,7 @@ spec:
             cpu: "500m"
         env:
         - name: MONGODB_URL
-          value: mongodb://root:root@mongodb-0.mongodb-headless:27017,mongodb-1.mongodb-headless:27017,mongodb-2.mongodb-headless:27017/
+          value: {{DB_URL}}
         - name: ORDERS_API_URL
           value: http://ordersapi:5151
         ports:
